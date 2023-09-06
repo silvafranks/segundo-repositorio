@@ -1,0 +1,55 @@
+#pai {
+    width: 80%;
+    height: 500px;
+    border: solid 3px #000;
+    margin: auto;
+    display: flex;
+    /* display:flex, deixa os
+     filhos flexiveis para alterar a posição */
+    justify-content: space-between;
+    /* justify-content, separa os filhos */
+
+    /* justify-content: space-evenly,
+        tamanhos iguais em volta dos filhos
+    */
+    
+
+     /* justify-content: space-around,
+        separa com tamanho proporcional entre os filhos
+         e metade do espaço entre as "paredes" do pai e os filhos
+    */
+
+        /* justify-content: space-between,
+        separa com tamanho proporcional SOMENTE entre os filhos e entre
+        as "paredes" e os filhos fica sem espaço.
+    */
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+.bola {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.cor1 {
+    background-color: red;
+    /* align-self: start; */
+    /* align-self: start;, ele mesmo para o 
+    começo da div do pai */
+}
+
+.cor2 {
+    background-color: blueviolet;
+    /* align-self: center; */
+      /* align-self: center;, ele mesmo para o 
+    começo da div do pai */
+}
+
+.cor3 {
+    background-color: green;
+    /* align-self: end; */
+      /* align-self: end;, ele mesmo para o 
+    começo da div do pai */
+}
