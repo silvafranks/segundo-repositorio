@@ -10,21 +10,25 @@
     /* justify-content, separa os filhos */
 
     /* justify-content: space-evenly,
-        tamanhos iguais em volta dos filhos
+        tamanhos iguais entre os filhos
     */
     
 
      /* justify-content: space-around,
-        separa com tamanho proporcional entre os filhos
-         e metade do espaço entre as "paredes" do pai e os filhos
+        separa com tamanho proporcional ao redor dos filhos
     */
 
         /* justify-content: space-between,
         separa com tamanho proporcional SOMENTE entre os filhos e entre
-        as "paredes" e os filhos fica sem espaço.
+        as "paredes" e os filhos ficam sem espaço.
     */
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
+
+    /* 
+     flex-direction: column;, 
+     muda o direcionamento colocando um filho abaixo do outro.
+     */
 }
 
 .bola {
