@@ -1,0 +1,75 @@
+* {
+
+    /* font-family: 'Courier New', Courier, monospace; */
+
+    /* Tem como passar mais de um valor para o mesmo atributo! */
+    font: italic bold 13px 'Courier New';
+    /*  
+    Estilo da fonte, deixar reclinado = italic
+    Espessura da fonte, deixar em negrito = bold
+    Tamanho da fonte = 13px
+    Família da fonte = 'Courier New'
+    */
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    border: 3px solid aqua;
+    background-color: #000;
+    margin: 0px 0px 3px 0px;
+    /* 
+    A posição dos valores representa cada lado do seu componente
+    margin: top= 0px right= 0px bottom= 3px left= 0px
+    */
+}
+
+.header .container {
+    /* 
+    Usamos a unidade de medida % para representar valores relativos 
+    e/ou o que deve ser ajustado de acordo com o tamanho da página.
+    
+    Ao colocarmos a margin com o valor ‘auto’, o navegador automaticamente 
+    realiza um cálculo de quanto de margin deve atribuir ao elemento com o 
+    tamanho relativo.
+    */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 
+Passe o caminho completo do seletor para especificar exatamente 
+qual o elemento que vai receber a estilização, utilizamos isso 
+quando um seletor não tem uma classe específica. 
+
+Lembre-se da estrutura que foi montada no HTML para criar o caminho 
+do seletor, ela é forma de forma hierárquica.
+*/
+.header .container ul {
+    width: 400px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(247, 165, 12);
+}
+
+
+.header a {
+    color: rgb(247, 165, 12);
+    /* 
+    Atribuir o valor ‘none’ anula qualquer estilização 
+    padrão do elemento.
+    Lembre-se que por padrão, as tags HTML já tem 
+    características e estilizações default.
+    */
+    text-decoration: none;
+}
+
+.header h1 {
+    color: aqua;
+}
